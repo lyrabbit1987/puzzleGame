@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>拼图游戏</title>
+    <style>
+        .puzzle-warp {
+            position: relative;
+            border: 2px solid aquamarine;
+        }
+
+        .puzzle-warp > div {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="puzzleWarp" class="puzzle-warp"></div>
+
+    <button id="start">开始</button>
+    <button id="reset">重置</button>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/puzzle.js"></script>
+    <script>
+        // 开始
+        var pz = new PuzzleGame({
+            warpSelector: '#puzzleWarp'
+        });
+
+        $('#start').on(window.touchestart? 'touchestart' : 'click', function() {
+            pz.puzzleStart();
+        });
+
+        $('#reset').on(window.touchestart? 'touchestart' : 'click', function() {
+            pz.random();
+        });
+    </script>
+</body>
+</html>
