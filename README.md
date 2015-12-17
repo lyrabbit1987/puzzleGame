@@ -2,14 +2,30 @@
 
 参数说明
         // 行
+        
         row: 3,
+        
         // 列
+        
         low: 4,
+        
         // 每片高度, 支持单位(em, px)
+        
         pieceH: '166px',
+        
         // 每片宽度, 支持单位(em, px)
+        
         pieceW: '191px',
+        
         // 片的边框宽度,单位px
+        
         border: '2px solid #ffffff',
+        
         // 片图片存储位置前缀
+        
         urlPreFix: './img'
+        
+        
+        实例地址可见
+        http://myz.uliveapp.com/
+        
